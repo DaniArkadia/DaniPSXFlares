@@ -14,15 +14,13 @@ namespace DaniPSXFlares
          Transform transform = lensFlare.transform;
          BoxCollider lineOfSightCollider = lensFlare.lineOfSightBox;
 
+         if (lineOfSightCollider == null) return true;
+
          RaycastHit hit;
          Physics.Raycast(activeCamera.transform.position, (transform.position - activeCamera.transform.position).normalized, out hit, 1000);
          if (hit.transform != null)
          {
             if (hit.collider == lineOfSightCollider)
-            {
-               return true;
-            }
-            if (lineOfSightCollider == null)
             {
                return true;
             }
@@ -38,12 +36,13 @@ namespace DaniPSXFlares
          Camera activeCamera = lensFlare.activeCamera;
          Transform transform = lensFlare.transform;
 
-         var angleToDot = (flareConfig.visibleAngle / 360 - 1);
-         if (Vector3.Dot(activeCamera.transform.forward, transform.forward) > angleToDot)
+         var angleToDot = (flareConfig.visibleAngle / 360) * 2;
+         var dot = Vector3.Dot(activeCamera.transform.forward, transform.forward) + 1;
+         if (dot <= angleToDot)
          {
-            return false;
+            return true;
          }
-         return true;
+         return false;
       }
    }
 }
