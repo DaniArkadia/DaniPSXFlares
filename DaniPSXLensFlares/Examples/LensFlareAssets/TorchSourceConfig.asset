@@ -1,0 +1,87 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b380dba2ceb7a6f46b1abd2487d12d87, type: 3}
+  m_Name: TorchSourceConfig
+  m_EditorClassIdentifier: 
+  distanceMultiplier: 1
+  groupingCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  xCompression: 1
+  yCompression: 1
+  visibleAngle: 90
+  lensFlareElements:
+  - spriteSettings:
+      sprite: {fileID: 21300000, guid: 44051b0b21091e44496b77dd3b562e93, type: 3}
+      material: {fileID: 2100000, guid: 737f5761fa48f2e4c89b7211beddb443, type: 2}
+    positionSettings:
+      isInitialized: 1
+      position: 0
+      positionFineAdjustment: 0
+      offset: {x: 0, y: 0}
+      size: 0.07
+      sizeFineAdjustment: -0.017
+      rotation: 0
+      constantPhysicalSize: 0
+      resizeAdjuster: 1
+    materialSettings:
+      isInitialized: 1
+      color: {r: 1, g: 1, b: 1, a: 1}
+      isEmissive: 0
+      emissionColor: {r: 1, g: 1, b: 1, a: 1}
+    fadeSettings:
+      isInitialized: 1
+      fadeInTime: 0.3
+      fadeOutTime: 0.3
+  - spriteSettings:
+      sprite: {fileID: 21300000, guid: ec97183531026584c83db500286bf21c, type: 3}
+      material: {fileID: 2100000, guid: 232ef043dfc379348908a8dbd2e1f26b, type: 2}
+    positionSettings:
+      isInitialized: 1
+      position: 0
+      positionFineAdjustment: 0
+      offset: {x: 0, y: 0}
+      size: 0.1
+      sizeFineAdjustment: -0.076
+      rotation: 0
+      constantPhysicalSize: 0
+      resizeAdjuster: 1
+    materialSettings:
+      isInitialized: 1
+      color: {r: 1, g: 1, b: 1, a: 1}
+      isEmissive: 1
+      emissionColor: {r: 1, g: 0.6901983, b: 0, a: 1}
+    fadeSettings:
+      isInitialized: 1
+      fadeInTime: 0.3
+      fadeOutTime: 0.3

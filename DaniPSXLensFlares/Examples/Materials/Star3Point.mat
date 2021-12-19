@@ -1,0 +1,83 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Star3Point
+  m_Shader: {fileID: 4800000, guid: 055eab4e84dc70a47ae75b3125a22de6, type: 3}
+  m_ShaderKeywords: _BRDF_MODE_LAMBERT _EMISSION _FOG_ON _LIGHTING_BAKED_ON _LIGHTING_DYNAMIC_ON
+    _SHADING_EVALUATION_MODE_PER_VERTEX _TEXTURE_FILTER_MODE_TEXTURE_IMPORT_SETTINGS
+  m_LightmapFlags: 2
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 1
+  m_CustomRenderQueue: 4601
+  stringTagMap:
+    RenderType: Transparent
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _EmissionTexture:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: ec97183531026584c83db500286bf21c, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _ReflectionCubemap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _ReflectionTexture:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - _AffineTextureWarpingWeight: 0
+    - _AlphaClip: 0
+    - _AlphaClippingDitherIsEnabled: 0
+    - _BRDFMode: 0
+    - _Blend: 2
+    - _BlendOp: 0
+    - _ColorMask: 15
+    - _Cull: 1
+    - _DoubleSidedNormalMode: 0
+    - _DrawDistanceOverrideMode: 0
+    - _DstBlend: 1
+    - _EmissionBakedMultiplier: 1
+    - _FogWeight: 1
+    - _LightingBaked: 1
+    - _LightingDynamic: 1
+    - _LightingMode: 0
+    - _PrecisionColorOverrideMode: 0
+    - _PrecisionGeometryOverrideMode: 0
+    - _PrecisionGeometryWeight: 1
+    - _Reflection: 0
+    - _ReflectionBlendMode: 0
+    - _ReflectionDirectionMode: 0
+    - _RenderQueueCategory: 2
+    - _ShadingEvaluationMode: 0
+    - _SrcBlend: 5
+    - _Surface: 1
+    - _TextureFilterMode: 0
+    - _UVAnimationMode: 0
+    - _VertexColorBlendMode: 0
+    - _VertexColorMode: 0
+    - _ZWrite: 0
+    m_Colors:
+    - _AlphaClippingScaleBiasMinMax: {r: 1, g: 0, b: 0, a: 1}
+    - _DoubleSidedConstants: {r: 1, g: 1, b: 1, a: 0}
+    - _DrawDistanceOverride: {r: 100, g: 10000, b: 0, a: 0}
+    - _EmissionColor: {r: 1, g: 0.7908805, b: 0.3726415, a: 1}
+    - _MainColor: {r: 1, g: 0.9320755, b: 0.759434, a: 1}
+    - _PrecisionColorOverrideParameters: {r: 0, g: 0, b: 0, a: 0}
+    - _PrecisionGeometryOverrideParameters: {r: 0, g: 0, b: 0, a: 0}
+    - _ReflectionColor: {r: 1, g: 1, b: 1, a: 1}
+    - _UVAnimationParameters: {r: 1, g: 1, b: 0, a: 0}
+    - _UVAnimationParametersFrameLimit: {r: 0, g: 60, b: 0, a: 0}
+  m_BuildTextureStacks: []
