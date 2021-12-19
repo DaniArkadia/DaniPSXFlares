@@ -28,7 +28,7 @@ This is little free asset I've made specifically to work with the Haunted PS1 re
 <h2>Cautions</h2>
 <ul><li> This is <b><i>ONLY<i/></b> intented for use with the <b><i>Haunted PS1 Render Pipeline (HPS1RP)</b></i> maybe it would work with other pipelines or the default ones but I haven't tested it.</li>
 <li> There may be bugs, as this was thrown together pretty quickly so contact me if you have any issues </li>
-<li> Right now there isn't any previewing of the effect in the scene view, I will implement this if there is enough interest as it's not that important for our project. </li></ul>
+<li> Right now there isn't any previewing of the effect in the scene view, I will implement this only if there is enough interest as it's not that important for our project. </li></ul>
 
 <h2>Contact</h2>
 <p>Email: devbeforebed@gmail.com<br>
