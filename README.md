@@ -19,6 +19,7 @@ This is little free asset I've made specifically to work with the Haunted PS1 re
 <h2>Tips</h2>
 <ul> <li> The code is fairly well commented so if you're unsure about something have a little peek. </li>
 <li> You can adjust all of the settings in the lens flare assets in realtime while in playmode. </li>
+<li> You can attach a game object with a small box collider to the lens flare gameObject, then set it in the lens flare inspector field. This will mean that the lens flare won't show unless it makes line of sight with this collider (useful if you don't want the effect to work through walls etc.)  </li>
 <li> You don't <b><i>need</b></i> to assign a value to the <b> active camera </b> field in the inspector if you don't want to, it will be assigned to <b>Camera.Main</b> if you leave it blank. </li>
 <li> Create custom lens flare assets by Right-Clicking in the project panel and selecting <b><i>Create > Effects > Flare Config</b></i></li>
 <li> You can add multiple <b><i>LensFlare</i></b> components to the same GameObject in order to
