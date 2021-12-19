@@ -11,7 +11,7 @@ This is little free asset I've made specifically to work with the Haunted PS1 re
 ```
 <ol> <li> Copy the folder into your project's assets folder. </li> 
 <li> Add the <b><i>LensFlare</i></b> component to any GameObject (usually it would be the same as a light source).
-<li> Select the example <b><i>LensFlares</i></b> In the <b><i>LensFlareAsset</i></b> field in the inspector.
+<li> Select the example <b><i>LensFlares</i></b> In the <b><i>FlareConfig</i></b> field in the inspector.
 <li> Position your camera to face the lens flare source.</li>
 <li> Press play. </li>
 <li> Double-Click on the asset and play around with all the settings to get a feel for how they work.</li></ol>
@@ -19,7 +19,8 @@ This is little free asset I've made specifically to work with the Haunted PS1 re
 <h2>Tips</h2>
 <ul> <li> The code is fairly well commented so if you're unsure about something have a little peek. </li>
 <li> You can adjust all of the settings in the lens flare assets in realtime while in playmode. </li>
-<li> Create custom lens flare assets by Right-Clicking in the project panel and selecting <b><i>Create > Effects > Lens Flare Asset</b></i></li>
+<li> You don't <b><i>need</b></i> to assign a value to the <b> active camera </b> field in the inspector if you don't want to, it will be assigned to Camera.Main if you leave it blank. </li>
+<li> Create custom lens flare assets by Right-Clicking in the project panel and selecting <b><i>Create > Effects > Flare Config</b></i></li>
 <li> You can add multiple <b><i>LensFlare</i></b> components to the same GameObject in order to
  achieve different viewing angles or any other custom behavior that is relevant.</ul>
 
