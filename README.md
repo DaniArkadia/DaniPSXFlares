@@ -10,8 +10,8 @@ This is little free asset I've made specifically to work with the Haunted PS1 re
 - MAKE SURE YOU ALREADY HAVE HPS1RP INSTALLED!
 ```
 <ol> <li> Copy the folder into your project's assets folder. </li> 
-<li> Add the <b><i>LensFlare</i></b> component to any GameObject (usually it would be the same as a light source).
-<li> Select the example <b><i>LensFlares</i></b> In the <b><i>FlareConfig</i></b> field in the inspector.
+<li> Add the <b><i>PSXLensFlare</i></b> component to any GameObject (usually it would be the same as a light source).
+<li> Select one of the two examples in the <b><i>FlareConfig</i></b> field in the inspector. (you can also add another <b><i>PSXLensFlare</i></b> component to the same object to use both similtaniously which is what I recommend for this example!
 <li> Position your camera to face the lens flare source.</li>
 <li> Press play. </li>
 <li> Double-Click on the asset and play around with all the settings to get a feel for how they work.</li></ol>
