@@ -10,11 +10,12 @@ This is little free asset I've made specifically to work with the Haunted PS1 re
 - MAKE SURE YOU ALREADY HAVE HPS1RP INSTALLED!
 ```
 <ol> <li> Copy the folder into your project's assets folder. </li> 
-<li> Add the <b><i>PSXLensFlare</i></b> component to any GameObject (usually it would be the same as a light source).
-<li> Select one of the two examples in the <b><i>FlareConfig</i></b> field in the inspector. (you can also add another <b><i>PSXLensFlare</i></b> component to the same object to use both similtaniously which is what I recommend for this example!
+<li> Add two <b><i>PSXLensFlare</i></b> components to any <b><i>GameObject</i></b> (usually it would be the same as a light source).</li>
+<li> Plug in <b><i>'TorchSourceConfig'</i></b> into the first component's field in the inspector. (this is an example of a source flare) </li>
+<li> Plug in <b><i>'TorchFlareConfig'</i></b> into the second component's field in the inspector. (this is an example of a standard flare) </li>
 <li> Position your camera to face the lens flare source.</li>
-<li> Press play. </li>
-<li> Double-Click on the asset and play around with all the settings to get a feel for how they work.</li></ol>
+<li> Press the play button. </li>
+<li> Try messing around with the settings for <b><i>'TorchSourceConfig'</i></b> and <b><i>'TorchFlareConfig'</i></b> to try and acheive different and interesting results. </li></ol>
 
 <h2>Tips</h2>
 <ul> <li> The code is fairly well commented so if you're unsure about something have a little peek. </li>
