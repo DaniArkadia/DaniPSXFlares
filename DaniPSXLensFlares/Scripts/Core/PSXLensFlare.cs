@@ -52,7 +52,7 @@ namespace DaniPSXFlares
          lensFlareElements = null;
          isInitialized = false;
       }
-      void Update()
+      void LateUpdate()
       {
          //we rely on the _activeCamera to actually have a camera assigned to it, so if it turns up null, we bail out here to avoid exeptions.
          if (activeCamera == null || isInitialized == false) return;
