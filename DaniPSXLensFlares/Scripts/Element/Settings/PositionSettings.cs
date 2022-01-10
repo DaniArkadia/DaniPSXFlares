@@ -29,7 +29,6 @@ namespace DaniPSXFlares.flareSettings
       [Tooltip("Leave this at 1 in most cases, this changes how much the scale of the element changes depending on camera distance IF constant physical size is switched OFF")]
       [Min(1)]
       public float resizeAdjuster = 1;
-      float defaultSize = 1;
 
       public float GetAdjustedPos()
       {
