@@ -43,6 +43,12 @@ namespace DaniPSXFlares
             }
          }
       }
+      
+      public void SetIsVisible()
+      {
+         isVisible = true;
+      }
+      
       //tells each element to fade in or out 
       void FadeElements(bool shouldFadeIn)
       {
