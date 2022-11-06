@@ -22,7 +22,20 @@ namespace DaniPSXFlares
          }
          SpawnContainer();
          SpawnElements();
+         SetInitialFadeStates();
       }
+      
+      void SetInitialFadeStates()
+      {
+         foreach (var flare in lensFlareElements)
+         {
+            if (FlareUtilities.HasLineOfSight(this))
+            {
+               flare.flareFading.SetIsVisible();
+            }
+         }
+      }
+
       void SpawnContainer()
       {
          if (flareContainer == null)
