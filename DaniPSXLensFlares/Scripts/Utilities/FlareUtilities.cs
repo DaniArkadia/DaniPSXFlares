@@ -13,18 +13,28 @@ namespace DaniPSXFlares
          Camera activeCamera = lensFlare.activeCamera;
          Transform transform = lensFlare.transform;
          BoxCollider lineOfSightCollider = lensFlare.lineOfSightBox;
+         LayerMask blockingLayers = lensFlare.overrideBlockingLayers ? lensFlare.overriddenBlockingLayers : lensFlare.flareConfig.flareBlockingLayers;
 
          if (lineOfSightCollider == null) return true;
 
-         RaycastHit hit;
-         Physics.Raycast(activeCamera.transform.position, (transform.position - activeCamera.transform.position).normalized, out hit, 1000);
-         if (hit.transform != null)
+         var vecToLensSource = (transform.position - Camera.main.transform.position);
+
+         if (Physics.Raycast(Camera.main.transform.position, vecToLensSource.normalized, vecToLensSource.magnitude, blockingLayers, QueryTriggerInteraction.Collide))
          {
-            if (hit.collider == lineOfSightCollider)
+            return false;
+         }
+
+         var hits = Physics.RaycastAll(Camera.main.transform.position, vecToLensSource.normalized, vecToLensSource.magnitude, ~blockingLayers, QueryTriggerInteraction.Collide);
+         
+         foreach (var hit in hits)
+         {
+            if (hit.transform == lineOfSightCollider.transform)
             {
+               Debug.DrawRay(Camera.main.transform.position, (transform.position - Camera.main.transform.position), Color.red);
                return true;
             }
          }
+
          return false;
       }
       /*we get the dot product between the camera's forward vector and the flare source's forward vector

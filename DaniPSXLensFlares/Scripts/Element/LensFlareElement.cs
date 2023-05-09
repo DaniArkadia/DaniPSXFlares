@@ -46,5 +46,18 @@ namespace DaniPSXFlares
          materialSettings.SetDefaultValues();
          fadeSettings.SetDefaultValues();
       }
-   }
+
+      public LensFlareElement Clone()
+      {
+         var clone = new LensFlareElement();
+         
+         clone.spriteSettings = this.spriteSettings;
+         clone.positionSettings = this.positionSettings;
+         clone.materialSettings = this.materialSettings;
+         clone.fadeSettings = this.fadeSettings;
+         clone.flareRendering = this.flareRendering;
+
+         return clone;
+      }
+    }
 }

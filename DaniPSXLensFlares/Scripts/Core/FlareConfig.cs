@@ -1,13 +1,10 @@
 using System;
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-#if UNITY_EDITOR
-using UnityEditor;
-#endif
+
 namespace DaniPSXFlares
 {
-   [CreateAssetMenu(menuName = "Effects/Flare Config")]
+    [CreateAssetMenu(menuName = "Effects/Flare Config")]
    public class FlareConfig : ScriptableObject
    {
       public static event Action OnRefreshElements;
@@ -27,6 +24,19 @@ namespace DaniPSXFlares
       public float visibleAngle = 90;
       public List<LensFlareElement> lensFlareElements = new List<LensFlareElement>(1);
 
+      public LayerMask flareBlockingLayers;
+
+      public List<LensFlareElement> GetFlareElements()
+      {
+         var flares = new List<LensFlareElement>();
+         for (int i = 0; i < lensFlareElements.Count; i++)
+         {
+            flares.Add(lensFlareElements[i].Clone());
+         }
+         return flares;
+      }
+
+      #if UNITY_EDITOR
       //this updates each element's visuals when you update something in playmode.
       void OnValidate()
       {
@@ -44,5 +54,6 @@ namespace DaniPSXFlares
             element.SetDefaultValues();
          }
       }
+      #endif
    }
 }

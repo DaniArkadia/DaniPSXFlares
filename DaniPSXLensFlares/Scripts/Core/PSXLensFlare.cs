@@ -11,6 +11,8 @@ namespace DaniPSXFlares
       [Tooltip("This is the asset that stores all the information for a specific lens flare effect. To create one go to the project window, Right-Click > Effects > Flare Config")]
       public FlareConfig flareConfig;
       public BoxCollider lineOfSightBox;
+      public bool overrideBlockingLayers;
+      public LayerMask overriddenBlockingLayers;
       GameObject flareContainer;
       List<LensFlareElement> lensFlareElements;
       bool isInitialized;
@@ -51,7 +53,7 @@ namespace DaniPSXFlares
          {
             var instance = new GameObject("LensFlare");
             instance.transform.parent = flareContainer.transform;
-            lensFlareElements.Add(flareConfig.lensFlareElements[i]);
+            lensFlareElements.Add(flareConfig.lensFlareElements[i].Clone());
             lensFlareElements[i].Initialize(this, instance);
             isInitialized = true;
          }
